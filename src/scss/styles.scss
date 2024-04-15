@@ -1,0 +1,281 @@
+@import "scss_files/_fonts.scss";
+@import "scss_files/_normalize.scss";
+@import "scss_files/_colors.scss";
+@import "scss_files/_functions.scss";
+@import "scss_files/_screen_widths.scss";
+
+//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW.
+
+body {
+    background-color: $body;
+    .body-container {
+        padding: 0 rem(16);
+    }
+}
+.scope {
+    max-width: rem(544);
+    margin: 0 auto;
+}
+
+// HEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADERHEADER 
+
+.header {
+    min-height: rem(51);
+    display: flex;
+    margin-bottom: ap(1, 100, 320, 1440);
+    .label-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .label {
+            font-family: 'Saira';
+            font-weight: 600;
+            font-size: clamp(rem(16), 5vw, rem(28));
+            color: $label_and_projects_name;
+            line-height: 1;
+        }
+        .label-meta {
+            font-family: 'Saira';
+            font-weight: 500;
+            font-size: clamp(rem(12), 3vw, rem(20));
+            color: $label_dark_articles_header;
+            line-height: 1;
+        }
+
+    }
+}
+
+// MAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAINMAIN
+
+.title {
+margin-bottom: ap(23, 36, 320, 1440);
+margin-top: rem(30);
+text-align: right;
+position: relative;
+    &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: rem(1);
+    left: rem(0);
+    border-radius: rem(0.5);
+    background-color: $label_dark_articles_header;
+    }
+    span {
+        font-family: 'Saira';
+        font-weight: 500;
+        font-size: rem(16);
+        color: $label_dark_articles_header;
+        line-height: 1.3;
+        }
+}
+
+// ______________________________________________________
+                                              // RPOGRESS
+
+.ul-progress {
+    padding: 0 ap(21, 89, 320, 744);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: ap(33, 56, 320, 1440);
+    margin-bottom: ap(40, 100, 320, 1440);
+    .li-progress {
+        position: relative;
+        width: rem(60);
+        height: rem(60);
+        background-color: $project_underline;
+        border-radius: rem(15);
+        box-shadow: rem(-4) rem(-4) rem(1) $icon_shadow_light, rem(4) rem(-4) rem(1) $icon_shadow_dark, rem(4) rem(4) rem(1) $icon_shadow_dark, rem(-4) rem(4) rem(1) $icon_shadow_light;
+        &[data-status="done"]::before {
+            content: '';
+            position: absolute;
+            width: rem(27);
+            height: rem(15);
+            border-left: solid rem(7) rgba(70, 156, 29, 0.6);
+            border-bottom: solid rem(6) rgba(70, 156, 29, 0.6);
+            transform:  rotate(-45deg) skew(-20deg);
+            top: rem(-18);
+            right: rem(-12);
+            border-radius: rem(3);
+        }
+        &[data-status="process"]::before {
+            content: '';
+            position: absolute;
+            width: rem(22);
+            height: rem(22);
+            border-radius: 50%;
+            border: solid rem(3) rgba(155, 211, 242, 0.6);
+            top: rem(-16);
+            left: rem(-16);
+        }
+        &[data-status="process"]::after {
+            content: '';
+            position: absolute;
+            width: rem(5);
+            height: rem(8);
+            border-right: solid rem(3) rgba(155, 211, 242, 0.6);
+            border-bottom: solid rem(3) rgba(155, 211, 242, 0.6);
+            border-radius: rem(1.5);
+            top: rem(-10);
+            left: rem(-8);
+            transform:  rotate(-20deg) skew(-20deg);
+        }
+        &[data-status="planned"]::before {
+            content: '';
+            position: absolute;
+            width: rem(1);
+            height: rem(17);
+            background-color: #999999;
+            border-top: solid rem(1) #777777;
+            border-right: solid rem(1) #777777;
+            border-bottom: solid rem(1) black;
+            border-left: solid rem(0.5) #777777;
+            top: rem(-11);
+            left: rem(34.5);
+            box-shadow: rem(1.5) rem(0) rem(1);
+            transform: rotate(10deg);
+        }
+        &[data-status="planned"]::after {
+            content: '';
+            position: absolute;
+            transform: rotate(-20deg);
+            width: rem(12);
+            height: rem(12);
+            border-radius: 50%;
+            background: radial-gradient(circle at rem(4) rem(3), #4F5FEB 20%, #2049B5 25%, #2049B5 100%);
+            box-shadow: rem(0.5) rem(1.5) rem(1);
+            top: rem(-19);
+            left: rem(32);
+        }
+
+    }
+}
+
+                         ////////////////////////////// PICTURE ////////////////////////
+.img-icon-progress {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+// _______________________________________________________
+                                               // RPOJECTS
+
+                                     
+// .time {
+//     height: 1000px;
+//     background-color: darkolivegreen;
+// }
+.ul-projects {
+    padding: 0 ap(21, 89, 320, 744);
+    margin-bottom: ap(40, 100, 320, 1440);
+    .li-project {
+        position: relative;
+        text-align: right;
+        margin-bottom: rem(24);
+        .project-review-area {
+            position: absolute;
+            width: 50%;
+            height: 50vh;
+            margin: auto 0;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            animation-name: smooth-project-preview;
+            animation-duration: 0.3s;
+            @keyframes smooth-project-preview{
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            .project-review-container {
+                position: sticky;
+                top: rem(0);
+                height: 50%;
+                .project-picture-position {
+                    border: rem(3) solid $label_and_projects_name;
+                    border-radius: rem(15);
+                    overflow: hidden;
+                    max-height: 100%;
+                    position: absolute;
+                    bottom: rem(0);
+                    .project-picture {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .show-or-hide_project-review-area {  //class for hidding ".project-review-area"
+            display: none;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: rem(1);
+            left: rem(0);
+            bottom: rem(0);
+            border-radius: rem(0.5);
+            background-color: $project_underline;
+        }
+        .link-to-project {
+            font-family: 'Fredoka';
+            font-size: rem(16);
+            color: $label_and_projects_name;
+        }
+    }
+}
+
+
+// _______________________________________________________
+                                                // CONTACT
+
+.ul-contact {
+    padding: 0 ap(21, 89, 320, 744);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: ap(33, 56, 320, 1440);
+    margin-bottom: ap(40, 100, 320, 1440);
+    .li-contact {
+        display: block;
+        width: rem(40);
+        height: rem(40);
+        background-color: $project_underline;
+        border-radius: rem(15);
+        box-shadow: rem(-4) rem(-4) rem(1) $icon_shadow_light, rem(4) rem(-4) rem(1) $icon_shadow_dark, rem(4) rem(4) rem(1) $icon_shadow_dark, rem(-4) rem(4) rem(1) $icon_shadow_light;
+    }
+}
+
+
+                         ////////////////////////////// PICTURE ////////////////////////
+.img-icon-contacts {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+
+@media screen and (min-width : rem(745)) {
+    .scope {
+        // border: 1px solid green;
+        max-width: rem(624);
+    }
+    .ul-progress {
+        padding: 0 rem(40);
+    }
+    .ul-projects {
+        padding: 0 rem(40);
+    }
+    .ul-contact {
+        padding: 0 rem(40);
+    }
+}

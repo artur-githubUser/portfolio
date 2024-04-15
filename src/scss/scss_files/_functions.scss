@@ -1,0 +1,9 @@
+// px to rem
+@function rem($pixels, $oneRemEqual : 16) {
+    @return 1rem * ($pixels / $oneRemEqual);
+}
+
+// adaptive property
+@function ap($minval, $maxval, $minWidth, $maxWidth, $const : 100vw, $oneRemEqual : 16) {
+    @return calc(1rem * ($minval / $oneRemEqual) + (($const - (1rem * ($minWidth / $oneRemEqual))) / (((1rem * ($maxWidth / $oneRemEqual)) - (1rem * ($minWidth / $oneRemEqual))) / ((1rem * ($maxval / $oneRemEqual)) - (1rem * ($minval / $oneRemEqual))))));
+}
