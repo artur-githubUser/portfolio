@@ -1,0 +1,25 @@
+.header {
+    min-height: rem(51);
+    display: flex;
+    margin-bottom: ap(1, 100, 320, 1440);
+    .label-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .label {
+            font-family: 'Saira';
+            font-weight: 600;
+            font-size: clamp(rem(16), 5vw, rem(28));
+            color: $label_and_projects_name;
+            line-height: 1;
+        }
+        .label-meta {
+            font-family: 'Saira';
+            font-weight: 500;
+            font-size: clamp(rem(12), 3vw, rem(20));
+            color: $label_dark_articles_header;
+            line-height: 1;
+        }
+
+    }
+}
