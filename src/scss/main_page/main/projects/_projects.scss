@@ -1,0 +1,63 @@
+.ul-projects {
+    padding: 0 ap(21, 89, 320, 744);
+    margin-bottom: ap(40, 100, 320, 1440);
+    .li-project {
+        position: relative;
+        text-align: right;
+        margin-bottom: rem(24);
+        .project-review-area {
+            position: absolute;
+            width: 50%;
+            height: 50vh;
+            margin: auto 0;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            animation-name: smooth-project-preview;
+            animation-duration: 0.3s;
+            @keyframes smooth-project-preview{
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            .project-review-container {
+                position: sticky;
+                top: rem(0);
+                height: 50%;
+                .project-picture-position {
+                    border: rem(3) solid $label_and_projects_name;
+                    border-radius: rem(15);
+                    overflow: hidden;
+                    max-height: 100%;
+                    position: absolute;
+                    bottom: rem(0);
+                    .project-picture {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .show-or-hide_project-review-area {  //class for hidding ".project-review-area"
+            display: none;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: rem(1);
+            left: rem(0);
+            bottom: rem(0);
+            border-radius: rem(0.5);
+            background-color: $project_underline;
+        }
+        .link-to-project {
+            font-family: 'Fredoka';
+            font-size: rem(16);
+            color: $label_and_projects_name;
+        }
+    }
+}

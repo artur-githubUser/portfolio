@@ -1,0 +1,18 @@
+body {
+    background-color: $body;
+    .body-container {
+        padding: 0 rem(16);
+    }
+}
+.scope {
+    max-width: rem(544);
+    margin: 0 auto;
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+@import "header/_header.scss";
+
+@import "main/_main.scss";
+
+@import "footer/contacts/_contacts.scss";

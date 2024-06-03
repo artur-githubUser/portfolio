@@ -1,0 +1,86 @@
+.ul-progress {
+    padding: 0 ap(21, 89, 320, 744);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: ap(33, 56, 320, 1440);
+    margin-bottom: ap(40, 100, 320, 1440);
+    .li-progress {
+        position: relative;
+        width: rem(60);
+        height: rem(60);
+        background-color: $project_underline;
+        border-radius: rem(15);
+        box-shadow: rem(-4) rem(-4) rem(1) $icon_shadow_light, rem(4) rem(-4) rem(1) $icon_shadow_dark, rem(4) rem(4) rem(1) $icon_shadow_dark, rem(-4) rem(4) rem(1) $icon_shadow_light;
+        &[data-status="done"]::before {
+            content: '';
+            position: absolute;
+            width: rem(27);
+            height: rem(15);
+            border-left: solid rem(7) rgba(70, 156, 29, 0.6);
+            border-bottom: solid rem(6) rgba(70, 156, 29, 0.6);
+            transform:  rotate(-45deg) skew(-20deg);
+            top: rem(-18);
+            right: rem(-12);
+            border-radius: rem(3);
+        }
+        &[data-status="process"]::before {
+            content: '';
+            position: absolute;
+            width: rem(22);
+            height: rem(22);
+            border-radius: 50%;
+            border: solid rem(3) rgba(155, 211, 242, 0.6);
+            top: rem(-16);
+            left: rem(-16);
+        }
+        &[data-status="process"]::after {
+            content: '';
+            position: absolute;
+            width: rem(5);
+            height: rem(8);
+            border-right: solid rem(3) rgba(155, 211, 242, 0.6);
+            border-bottom: solid rem(3) rgba(155, 211, 242, 0.6);
+            border-radius: rem(1.5);
+            top: rem(-10);
+            left: rem(-8);
+            transform:  rotate(-20deg) skew(-20deg);
+        }
+        &[data-status="planned"]::before {
+            content: '';
+            position: absolute;
+            width: rem(1);
+            height: rem(17);
+            background-color: #999999;
+            border-top: solid rem(1) #777777;
+            border-right: solid rem(1) #777777;
+            border-bottom: solid rem(1) black;
+            border-left: solid rem(0.5) #777777;
+            top: rem(-11);
+            left: rem(34.5);
+            box-shadow: rem(1.5) rem(0) rem(1);
+            transform: rotate(10deg);
+        }
+        &[data-status="planned"]::after {
+            content: '';
+            position: absolute;
+            transform: rotate(-20deg);
+            width: rem(12);
+            height: rem(12);
+            border-radius: 50%;
+            background: radial-gradient(circle at rem(4) rem(3), #4F5FEB 20%, #2049B5 25%, #2049B5 100%);
+            box-shadow: rem(0.5) rem(1.5) rem(1);
+            top: rem(-19);
+            left: rem(32);
+        }
+
+    }
+}
+
+                         ////////////////////////////// PICTURE ////////////////////////
+.img-icon-progress {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
