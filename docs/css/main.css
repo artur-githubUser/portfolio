@@ -61,19 +61,19 @@ body {
   display: flex;
   margin-bottom: calc(0.0625rem + (100vw - 20rem) / 11.3131313131);
 }
-.header .label-block {
+.header .logo-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.header .label-block .label {
+.header .logo-block .label {
   font-family: "Saira";
   font-weight: 600;
   font-size: clamp(1rem, 5vw, 1.75rem);
   color: #9BD3F2;
   line-height: 1;
 }
-.header .label-block .label-meta {
+.header .logo-block .label-meta {
   font-family: "Saira";
   font-weight: 500;
   font-size: clamp(0.75rem, 3vw, 1.25rem);
