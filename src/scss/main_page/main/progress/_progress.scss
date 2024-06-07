@@ -1,5 +1,5 @@
 .ul-progress {
-    padding: 0 ap(21, 89, 320, 744);
+    padding: 0 ap(21, 70, 320, 744);    //
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -76,6 +76,14 @@
 
     }
 }
+
+
+@media screen and (min-width : rem(745)) {
+    .ul-progress {
+        padding: 0 rem(40);
+    }
+}
+
 
                          ////////////////////////////// PICTURE ////////////////////////
 .img-icon-progress {

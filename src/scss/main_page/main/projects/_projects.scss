@@ -61,3 +61,10 @@
         }
     }
 }
+
+
+@media screen and (min-width : rem(745)) {
+    .ul-projects {
+        padding: 0 rem(40);
+    }
+}

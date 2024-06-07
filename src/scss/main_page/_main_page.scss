@@ -1,12 +1,17 @@
 body {
     background-color: $body;
-    .body-container {
-        padding: 0 rem(16);
-    }
 }
-.scope {
+
+.body-container {
     max-width: rem(544);
     margin: 0 auto;
+    padding: 0 rem(16);
+}
+
+@media screen and (min-width : rem(745)) {
+    .body-container {
+        max-width: rem(624);
+    }
 }
 
 //////////////////////////////////////////////////////////////////////////

@@ -17,6 +17,12 @@
     }
 }
 
+@media screen and (min-width : rem(745)) {
+    .ul-contact {
+        padding: 0 rem(40);
+    }
+}
+
 
                          ////////////////////////////// PICTURE ////////////////////////
 .img-icon-contacts {
@@ -27,18 +33,3 @@
 }
 
 
-@media screen and (min-width : rem(745)) {
-    .scope {
-        // border: 1px solid green;
-        max-width: rem(624);
-    }
-    .ul-progress {
-        padding: 0 rem(40);
-    }
-    .ul-projects {
-        padding: 0 rem(40);
-    }
-    .ul-contact {
-        padding: 0 rem(40);
-    }
-}
