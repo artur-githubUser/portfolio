@@ -7,7 +7,7 @@ BABEL:
 
 	* runs separately from the console. The command is listed in the LAUNCH section
 
-HTML-inclusions:
+htmlInclude:
 
-	* include files are ignored in folders named "html_inclusions"
+	* при добавдении newpage.html в /pages/newpage, необходимо указать в gulpfile.js -> htmlInclude() путь к newpage.html (например: /pages/newpage/newpage.html)
 
