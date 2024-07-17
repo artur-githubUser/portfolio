@@ -118,7 +118,6 @@ body {
   height: 3.75rem;
   background-color: #5099AF;
   border-radius: 0.9375rem;
-  box-shadow: -0.25rem -0.25rem 0.0625rem #656565, 0.25rem -0.25rem 0.0625rem #3A3A3A, 0.25rem 0.25rem 0.0625rem #3A3A3A, -0.25rem 0.25rem 0.0625rem #656565;
 }
 .ul-progress .li-progress[data-status=done]::before {
   content: "";

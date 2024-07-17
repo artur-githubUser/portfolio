@@ -11,7 +11,6 @@
         height: rem(60);
         background-color: $project_underline;
         border-radius: rem(15);
-        box-shadow: rem(-4) rem(-4) rem(1) $icon_shadow_light, rem(4) rem(-4) rem(1) $icon_shadow_dark, rem(4) rem(4) rem(1) $icon_shadow_dark, rem(-4) rem(4) rem(1) $icon_shadow_light;
         &[data-status="done"]::before {
             content: '';
             position: absolute;
