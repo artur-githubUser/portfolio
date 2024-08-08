@@ -46,16 +46,16 @@ body {
 }
 
 .body-container {
-  max-width: 75rem;
+  max-width: 31.25rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
-
-@media screen and (min-width: 46.5625rem) {
+@media screen and (min-width: 52.125rem) {
   .body-container {
-    max-width: 39rem;
+    max-width: 52.125rem;
   }
 }
+
 .header {
   min-height: 3.1875rem;
   display: flex;
@@ -88,11 +88,10 @@ body {
 @media screen and (min-width: 52.125rem) {
   .main-styles {
     flex-direction: row;
-    flex-wrap: wrap;
   }
 }
 
-.common-title {
+.common-title-styles {
   text-align: right;
   position: relative;
   font-family: "Saira";
@@ -100,7 +99,7 @@ body {
   font-size: 1rem;
   color: #273A51;
 }
-.common-title::before {
+.common-title-styles::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -111,94 +110,33 @@ body {
 }
 
 .li-progress {
-  position: relative;
   width: 3.75rem;
   height: 3.75rem;
   background-color: #5099AF;
   border-radius: 0.9375rem;
 }
-.li-progress[data-status=done]::before {
-  content: "";
-  position: absolute;
-  width: 1.6875rem;
-  height: 0.9375rem;
-  border-left: solid 0.4375rem rgba(70, 156, 29, 0.6);
-  border-bottom: solid 0.375rem rgba(70, 156, 29, 0.6);
-  transform: rotate(-45deg) skew(-20deg);
-  top: -1.125rem;
-  right: -0.75rem;
-  border-radius: 0.1875rem;
-}
-.li-progress[data-status=process]::before {
-  content: "";
-  position: absolute;
-  width: 1.375rem;
-  height: 1.375rem;
-  border-radius: 50%;
-  border: solid 0.1875rem rgba(155, 211, 242, 0.6);
-  top: -1rem;
-  left: -1rem;
-}
-.li-progress[data-status=process]::after {
-  content: "";
-  position: absolute;
-  width: 0.3125rem;
-  height: 0.5rem;
-  border-right: solid 0.1875rem rgba(155, 211, 242, 0.6);
-  border-bottom: solid 0.1875rem rgba(155, 211, 242, 0.6);
-  border-radius: 0.09375rem;
-  top: -0.625rem;
-  left: -0.5rem;
-  transform: rotate(-20deg) skew(-20deg);
-}
-.li-progress[data-status=planned]::before {
-  content: "";
-  position: absolute;
-  width: 0.0625rem;
-  height: 1.0625rem;
-  background-color: #999999;
-  border-top: solid 0.0625rem #777777;
-  border-right: solid 0.0625rem #777777;
-  border-bottom: solid 0.0625rem black;
-  border-left: solid 0.03125rem #777777;
-  top: -0.6875rem;
-  left: 2.15625rem;
-  box-shadow: 0.09375rem 0rem 0.0625rem;
-  transform: rotate(10deg);
-}
-.li-progress[data-status=planned]::after {
-  content: "";
-  position: absolute;
-  transform: rotate(-20deg);
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 50%;
-  background: radial-gradient(circle at 0.25rem 0.1875rem, #4F5FEB 20%, #2049B5 25%, #2049B5 100%);
-  box-shadow: 0.03125rem 0.09375rem 0.0625rem;
-  top: -1.1875rem;
-  left: 2rem;
-}
 
-.ul-progress {
-  padding: 0 calc(1.3125rem + (100vw - 20rem) / 8.6530612245);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: calc(2.0625rem + (100vw - 20rem) / 48.6956521739);
-  margin-bottom: calc(2.5rem + (100vw - 20rem) / 18.6666666667);
-}
-
-@media screen and (min-width: 46.5625rem) {
-  .ul-progress {
-    padding: 0 2.5rem;
-  }
-}
 .img-icon-progress {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: inherit;
+}
+
+@media screen and (min-width: 52.125rem) {
+  .competencies-container-styles {
+    max-width: 50%;
+    padding-right: 3.125rem;
+  }
+}
+
+.competencies-list-styles {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 65%;
+  margin: 0 auto;
+  gap: 0.625rem;
 }
 
 .ul-projects {
@@ -271,7 +209,7 @@ body {
     padding: 0 2.5rem;
   }
 }
-.common-title {
+.common-title-styles {
   text-align: right;
   position: relative;
   font-family: "Saira";
@@ -279,7 +217,7 @@ body {
   font-size: 1rem;
   color: #273A51;
 }
-.common-title::before {
+.common-title-styles::before {
   content: "";
   position: absolute;
   width: 100%;

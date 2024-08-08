@@ -2,28 +2,24 @@
 
 @import "competence_icon/competence_icon";
 
-.ul-progress {
-    padding: 0 ap(21, 70, 320, 744);    //
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: ap(33, 56, 320, 1440);
-    margin-bottom: ap(40, 100, 320, 1440);
-    
-}
+.competencies-container-styles {
 
-
-@media screen and (min-width : rem(745)) {
-    .ul-progress {
-        padding: 0 rem(40);
+    @media screen and (min-width : rem($tablet)) {
+        max-width: 50%;
+        padding-right: rem(50);
     }
 }
 
 
-                         ////////////////////////////// PICTURE ////////////////////////
-.img-icon-progress {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: inherit;
+.competencies-list-styles {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 65%;
+    margin: 0 auto;
+    gap: rem(10);
 }
+
+
+
+
+
