@@ -46,7 +46,7 @@ body {
 }
 
 .body-container {
-  max-width: 34rem;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -81,13 +81,26 @@ body {
   line-height: 1;
 }
 
-.title {
-  margin-bottom: calc(1.4375rem + (100vw - 20rem) / 86.1538461538);
-  margin-top: 1.875rem;
+.main-styles {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 52.125rem) {
+  .main-styles {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.common-title {
   text-align: right;
   position: relative;
+  font-family: "Saira";
+  font-weight: 500;
+  font-size: 1rem;
+  color: #273A51;
 }
-.title::before {
+.common-title::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -96,30 +109,15 @@ body {
   border-radius: 0.03125rem;
   background-color: #273A51;
 }
-.title span {
-  font-family: "Saira";
-  font-weight: 500;
-  font-size: 1rem;
-  color: #273A51;
-  line-height: 1.3;
-}
 
-.ul-progress {
-  padding: 0 calc(1.3125rem + (100vw - 20rem) / 8.6530612245);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: calc(2.0625rem + (100vw - 20rem) / 48.6956521739);
-  margin-bottom: calc(2.5rem + (100vw - 20rem) / 18.6666666667);
-}
-.ul-progress .li-progress {
+.li-progress {
   position: relative;
   width: 3.75rem;
   height: 3.75rem;
   background-color: #5099AF;
   border-radius: 0.9375rem;
 }
-.ul-progress .li-progress[data-status=done]::before {
+.li-progress[data-status=done]::before {
   content: "";
   position: absolute;
   width: 1.6875rem;
@@ -131,7 +129,7 @@ body {
   right: -0.75rem;
   border-radius: 0.1875rem;
 }
-.ul-progress .li-progress[data-status=process]::before {
+.li-progress[data-status=process]::before {
   content: "";
   position: absolute;
   width: 1.375rem;
@@ -141,7 +139,7 @@ body {
   top: -1rem;
   left: -1rem;
 }
-.ul-progress .li-progress[data-status=process]::after {
+.li-progress[data-status=process]::after {
   content: "";
   position: absolute;
   width: 0.3125rem;
@@ -153,7 +151,7 @@ body {
   left: -0.5rem;
   transform: rotate(-20deg) skew(-20deg);
 }
-.ul-progress .li-progress[data-status=planned]::before {
+.li-progress[data-status=planned]::before {
   content: "";
   position: absolute;
   width: 0.0625rem;
@@ -168,7 +166,7 @@ body {
   box-shadow: 0.09375rem 0rem 0.0625rem;
   transform: rotate(10deg);
 }
-.ul-progress .li-progress[data-status=planned]::after {
+.li-progress[data-status=planned]::after {
   content: "";
   position: absolute;
   transform: rotate(-20deg);
@@ -179,6 +177,15 @@ body {
   box-shadow: 0.03125rem 0.09375rem 0.0625rem;
   top: -1.1875rem;
   left: 2rem;
+}
+
+.ul-progress {
+  padding: 0 calc(1.3125rem + (100vw - 20rem) / 8.6530612245);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: calc(2.0625rem + (100vw - 20rem) / 48.6956521739);
+  margin-bottom: calc(2.5rem + (100vw - 20rem) / 18.6666666667);
 }
 
 @media screen and (min-width: 46.5625rem) {
@@ -264,6 +271,24 @@ body {
     padding: 0 2.5rem;
   }
 }
+.common-title {
+  text-align: right;
+  position: relative;
+  font-family: "Saira";
+  font-weight: 500;
+  font-size: 1rem;
+  color: #273A51;
+}
+.common-title::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.0625rem;
+  left: 0rem;
+  border-radius: 0.03125rem;
+  background-color: #273A51;
+}
+
 .ul-contact {
   padding: 0 calc(1.3125rem + (100vw - 20rem) / 6.2352941176);
   display: flex;

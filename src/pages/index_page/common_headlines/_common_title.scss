@@ -1,0 +1,19 @@
+
+
+.common-title {
+    text-align: right;
+    position: relative;
+    font-family: 'Saira';
+    font-weight: 500;
+    font-size: rem(16);
+    color: $label_dark_articles_header;
+        &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: rem(1);
+        left: rem(0);
+        border-radius: rem(0.5);
+        background-color: $label_dark_articles_header;
+        }
+}
