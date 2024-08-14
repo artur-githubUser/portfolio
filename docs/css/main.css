@@ -88,6 +88,9 @@ body {
     grid-auto-columns: 1fr;
   }
 }
+.main-styles article {
+  margin-bottom: 2.5rem;
+}
 
 .common-title-styles {
   text-align: right;
