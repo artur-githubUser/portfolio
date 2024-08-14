@@ -1,15 +1,11 @@
 
 .main-styles {
-    display: flex;
-    flex-direction: column;
-
     @media screen and (min-width : rem($tablet)) {
-        flex-direction: row;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
     }
 }
-
-
-
 
 
 

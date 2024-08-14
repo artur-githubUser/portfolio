@@ -81,13 +81,11 @@ body {
   line-height: 1;
 }
 
-.main-styles {
-  display: flex;
-  flex-direction: column;
-}
 @media screen and (min-width: 52.125rem) {
   .main-styles {
-    flex-direction: row;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
   }
 }
 
@@ -98,6 +96,7 @@ body {
   font-weight: 500;
   font-size: 1rem;
   color: #273A51;
+  margin-bottom: 0.625rem;
 }
 .common-title-styles::before {
   content: "";
@@ -124,13 +123,6 @@ body {
   border-radius: inherit;
 }
 
-@media screen and (min-width: 52.125rem) {
-  .competencies-container-styles {
-    max-width: 50%;
-    padding-right: 3.125rem;
-  }
-}
-
 .competencies-list-styles {
   display: flex;
   flex-wrap: wrap;
@@ -139,10 +131,6 @@ body {
   gap: 0.625rem;
 }
 
-.ul-projects {
-  padding: 0 calc(1.3125rem + (100vw - 20rem) / 6.2352941176);
-  margin-bottom: calc(2.5rem + (100vw - 20rem) / 18.6666666667);
-}
 .ul-projects .li-project {
   position: relative;
   text-align: right;
@@ -204,11 +192,6 @@ body {
   color: #9BD3F2;
 }
 
-@media screen and (min-width: 46.5625rem) {
-  .ul-projects {
-    padding: 0 2.5rem;
-  }
-}
 .common-title-styles {
   text-align: right;
   position: relative;
@@ -216,6 +199,7 @@ body {
   font-weight: 500;
   font-size: 1rem;
   color: #273A51;
+  margin-bottom: 0.625rem;
 }
 .common-title-styles::before {
   content: "";

@@ -7,6 +7,7 @@
     font-weight: 500;
     font-size: rem(16);
     color: $label_dark_articles_header;
+    margin-bottom: rem(10);
         &::before {
         content: '';
         position: absolute;

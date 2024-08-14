@@ -1,6 +1,7 @@
+
+
 .ul-projects {
-    padding: 0 ap(21, 89, 320, 744);
-    margin-bottom: ap(40, 100, 320, 1440);
+
     .li-project {
         position: relative;
         text-align: right;
@@ -63,8 +64,3 @@
 }
 
 
-@media screen and (min-width : rem(745)) {
-    .ul-projects {
-        padding: 0 rem(40);
-    }
-}
