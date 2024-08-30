@@ -4,12 +4,13 @@
     // position: relative;
     width: rem(60);
     height: rem(60);
-    background-color: $project_underline;
+    // background-color: $project_underline;
+    border: rem(1) solid rgb(90, 29, 29);
     border-radius: rem(15);
 }
 
  ////////////////////////////// PICTURE ////////////////////////
- .img-icon-progress {
+ .competence-img-style {
     width: 100%;
     height: 100%;
     object-fit: cover;
