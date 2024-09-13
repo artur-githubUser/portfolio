@@ -4,7 +4,6 @@ let delegationParentElement = document.querySelector('.ul-projects');   // editi
 delegationParentElement.addEventListener('pointerover', showProjectPreview);
 delegationParentElement.addEventListener('pointerout', hideProjectPreview);
 
-
 let eventElement = '.link-to-project';  
 let showAndHideElementStyleClassName = 'show-or-hide_project-review-area';  // editing. Add this class om element to HTML and set {display: none;} in css/scss
 
@@ -15,11 +14,11 @@ function showProjectPreview(event) {
 
         event.target.closest(eventElement).oncontextmenu = (event) => event.preventDefault();
 
-                    // здесь (помойму) отключается контекстменю на элементе (previousElementSibling), который попадает под pointerover. Зделать под это контекстную переменную
-        event.target.previousElementSibling.oncontextmenu = (event) => event.preventDefault();
-
-                    // editing. showAndHideObject position relative to eventElement. То же самое. Помоему здесь previousElementSibling это show&HideObject-объект. Сделать под него переменную
-        event.target.previousElementSibling.classList.toggle(showAndHideElementStyleClassName);
+                    // editing. The element that also fell within the click area
+        //  подумать как положить это  ---------------------------   в переменную
+        event.target.closest('.li-project').querySelector('.project-review-area').oncontextmenu = (event) => event.preventDefault();
+        //  подумать как положить это  ---------------------------   в переменную
+        event.target.closest('.li-project').querySelector('.project-review-area').classList.toggle(showAndHideElementStyleClassName);
 
 
     };
@@ -29,7 +28,7 @@ function showProjectPreview(event) {
 function hideProjectPreview(event) {
     if (event.target.closest(eventElement)) {
 
-                    // editing. showAndHideObject position relative to eventElement. То же самое. Помоему здесь previousElementSibling это show&HideObject-объект. Сделать под него переменную
-        event.target.previousElementSibling.classList.toggle(showAndHideElementStyleClassName);
+        //  подумать как положить это  ---------------------------   в переменную
+        event.target.closest('.li-project').querySelector('.project-review-area').classList.toggle(showAndHideElementStyleClassName);
     }
 };
