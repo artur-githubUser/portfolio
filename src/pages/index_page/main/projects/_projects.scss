@@ -1,4 +1,5 @@
-
+//  посмотреть поведение превьюшек на верху при длинных-вертикальных
+//  экранах (слишком внизу относительно текста)
 
 .ul-projects {
 
@@ -7,6 +8,8 @@
         text-align: right;
         margin-bottom: rem(24);
         .project-review-area {
+            border: 1px solid red;
+
             position: absolute;
             width: 50%;
             height: 50vh;

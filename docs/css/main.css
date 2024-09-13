@@ -140,6 +140,7 @@ body {
   margin-bottom: 1.5rem;
 }
 .ul-projects .li-project .project-review-area {
+  border: 1px solid red;
   position: absolute;
   width: 50%;
   height: 50vh;
