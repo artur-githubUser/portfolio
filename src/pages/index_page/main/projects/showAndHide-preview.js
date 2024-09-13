@@ -13,17 +13,10 @@ function showProjectPreview(event) {
 
     if (event.target.closest(eventElement)) {
 
-        function disablingContextMenuOnSmarfone (event) {
-            if (event.defaultPrevented) {
-                return;
-            }
-            event.preventDefault();
-        }
-
-        event.target.closest(eventElement).oncontextmenu = disablingContextMenuOnSmarfone;
+        event.target.closest(eventElement).oncontextmenu = (event) => event.preventDefault();
 
                     // здесь (помойму) отключается контекстменю на элементе (previousElementSibling), который попадает под pointerover. Зделать под это контекстную переменную
-        event.target.previousElementSibling.oncontextmenu = disablingContextMenuOnSmarfone;
+        event.target.previousElementSibling.oncontextmenu = (event) => event.preventDefault();
 
                     // editing. showAndHideObject position relative to eventElement. То же самое. Помоему здесь previousElementSibling это show&HideObject-объект. Сделать под него переменную
         event.target.previousElementSibling.classList.toggle(showAndHideElementStyleClassName);
