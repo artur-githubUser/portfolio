@@ -1,27 +1,34 @@
-class competencyСategory {
+class competenceСategory {
 
     constructor () {
-
-
-        this.developmentSide = {
-            frontEnd : 'frontend',
-            backend : 'backend',
-            base : 'base'
-        };
-
-        // this.competenceStatus = {
-        //     done : ,                //  тут будет функция устанавливающая соответствующий цвет (возможно сеттер?)
-        //     inProgress : ,
-        //     planned : ,
-        // };
-
-
-        //  возможно гдето здесь будет массив с созданными элементами
+        this.
     }
 
 
+    //  стр. 461
+    optionsOfcompetence = {
 
+        developmentSide = {
+            frontEnd : 'frontend',
+            backend : 'backend',
+            base : 'base'
+        },
+
+        competenceStatus = {
+            done : 'done',                //  тут будет функция устанавливающая
+            inProgress : 'inProgress',    //  соответствующий цвет (возможно сеттер?)
+            planned : 'planned',
+        },
+
+    };
 }
+
+const propertiesOfCompetence = new competenceСategory();
+
+
+export {
+    propertiesOfCompetence,
+};
 
 
 // constructor (frontEndTechnology) {

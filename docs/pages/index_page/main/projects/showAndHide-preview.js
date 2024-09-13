@@ -6,7 +6,7 @@ delegationParentElement.addEventListener('pointerout', hideProjectPreview);
 
 
 let eventElement = '.link-to-project';  
-let showAndHideElementStyleClassName = 'show-or-hide_project-review-area';  // editing. Add this class om element to HTML and write {display: none;} in css/scss
+let showAndHideElementStyleClassName = 'show-or-hide_project-review-area';  // editing. Add this class om element to HTML and set {display: none;} in css/scss
 
 
 function showProjectPreview(event) {
@@ -22,10 +22,10 @@ function showProjectPreview(event) {
 
         event.target.closest(eventElement).oncontextmenu = disablingContextMenuOnSmarfone;
 
-                    // editing. showAndHideObject position relative to eventElement
+                    // здесь (помойму) отключается контекстменю на элементе (previousElementSibling), который попадает под pointerover. Зделать под это контекстную переменную
         event.target.previousElementSibling.oncontextmenu = disablingContextMenuOnSmarfone;
 
-                    // editing. showAndHideObject position relative to eventElement
+                    // editing. showAndHideObject position relative to eventElement. То же самое. Помоему здесь previousElementSibling это show&HideObject-объект. Сделать под него переменную
         event.target.previousElementSibling.classList.toggle(showAndHideElementStyleClassName);
 
 
@@ -36,7 +36,7 @@ function showProjectPreview(event) {
 function hideProjectPreview(event) {
     if (event.target.closest(eventElement)) {
 
-                    // editing. showAndHideObject position relative to eventElement
+                    // editing. showAndHideObject position relative to eventElement. То же самое. Помоему здесь previousElementSibling это show&HideObject-объект. Сделать под него переменную
         event.target.previousElementSibling.classList.toggle(showAndHideElementStyleClassName);
     }
 };
