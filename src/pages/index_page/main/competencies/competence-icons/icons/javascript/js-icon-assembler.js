@@ -1,4 +1,4 @@
-import {tagAndAttributeConstructor} from '../../../../../../../js-library-presets/tag-constructor/createItemTags.js';
+import {tagAndAttributeConstructor} from '../../../../../../../js-library-presets/tag-And-Attribute-Constructor/tagAndAttributeConstructor.js';
 
 
 let tagLi =  new tagAndAttributeConstructor.defaultTag ('li', 'gulp-competence-icon','competence-style');
