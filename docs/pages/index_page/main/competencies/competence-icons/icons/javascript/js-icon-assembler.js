@@ -15,7 +15,7 @@ tagLi.tag.append(tagImg.tag);
 
 let javascriptIcon = tagLi.tag;
 
-document.getElementById("competencies-list").append(javascriptIcon);
+// document.getElementById("competencies-list").append(javascriptIcon);
 
 console.log(javascriptIcon);
 
