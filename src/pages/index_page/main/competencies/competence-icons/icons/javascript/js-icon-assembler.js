@@ -13,10 +13,13 @@ let tagImg = new tagAndAttributeConstructor.imgTag (
 
 tagLi.tag.append(tagImg.tag);
 
-document.getElementById("competencies-list").append(tagLi.tag);
+let javascriptIcon = tagLi.tag;
 
+document.getElementById("competencies-list").append(javascriptIcon);
 
-console.log(tagLi.tag);
+console.log(javascriptIcon);
 
+console.log('hi from js-icon-assembler');
 
-console.log('hi');
+export {javascriptIcon}
+
