@@ -18,5 +18,5 @@ let javascriptIcon = tagLi.tag;
 
 
 
-export {javascriptIcon}
+export default javascriptIcon
 

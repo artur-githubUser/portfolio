@@ -6,13 +6,17 @@
 //  *   вроде динамический импорт не требует type='module' в html
 
 
-import("./competence-icons/icons/javascript/js-icon-assembler.js")
-    .then(({javascriptIcon}) => {document.getElementById("competencies-list").append(javascriptIcon)});
 
+console.log('hi from insertElementTo');
 
-import("./competence-icons/icons/gulp/gulp-icon-assembler.js")
-     .then(({gulpIcon}) => {document.getElementById("competencies-list").append(gulpIcon)});
+function insertElementToObject (stringPathToModule, stringObjectId) { //stringPathToModule, placedElement,  stringObjectId
+    
+    import(stringPathToModule)
+    .then( module => document.getElementById(stringObjectId).append(module.default) )
+}
 
-
-console.log('hi from importAndInsertElements');
+insertElementToObject(
+    "./competence-icons/icons/javascript/js-icon-assembler.js",
+    'competencies-list',
+);
 
