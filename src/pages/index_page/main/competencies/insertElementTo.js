@@ -3,6 +3,8 @@
 // это будет библиотечный вариант
 
 
+//  *   вроде динамический импорт не требует type='module' в html
+
 
 import("./competence-icons/icons/javascript/js-icon-assembler.js")
     .then(({javascriptIcon}) => {document.getElementById("competencies-list").append(javascriptIcon)});
