@@ -9,6 +9,8 @@
 // в readme написать, что по умолчанию родительский элемент определяется по id
 
 
+
+
 console.log('hi from insertElementTo');
 
 function insertElementToObject (stringPathToModule, stringObjectId) { //stringPathToModule, placedElement,  stringObjectId
@@ -32,4 +34,12 @@ insertElementToObject(
     'competencies-list',
 )
 
+
+
 export {insertElementToObject}
+
+import gulpIcon from "./competence-icons/icons/gulp/gulp-icon-assembler.js";
+
+if (gulpIcon.gulpIconProperties.itDirection == 'frontend') {
+    gulpIcon.hidden = true;
+}

@@ -1,24 +1,23 @@
-class categoryConstructorWithProperties {
+class CategoryConstructorWithProperties {
 
-    constructor () {
-        this.importedObject = importedObject;
-        this[importedObject] = properties = {
-                itDirection : {
-                    backEnd : 'backend',
-                    frontend : 'frontend',
-                    other : 'other',
-                }
+    constructor (itDirection) {
+        this.itDirection = itDirection;
+    }
+
+    set itDirection(value) {
+        try {
+            if (this.itDirection == ('backend' || 'frontend' || 'other')) {
+                this.itDirection == value;
+            } else {
+                throw new PropertyInstallationError("for the itDirection parameter, only one of these string arguments is used: backend, frontend, other");
             }
-        //  this[importedObject].img : ... ,
-
-        // this.status = {
-        //         done : // тут либо указать руками цвета, либо написать функцию присваивающую цвета
-        //         inProgress :
-        //         planned :
-        //     }
+        } catch(error) {
+            console.log(error)
+        }
+    }
         
     }
-}
 
-export default categoryConstructorWithProperties;
+
+
 
