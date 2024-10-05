@@ -1,15 +1,16 @@
-import gulpIcon from "../../pages/index_page/main/competencies/competence-icons/icons/gulp/gulp-icon-assembler.js"
-
 class categoryConstructorWithProperties {
 
     constructor () {
         this.importedObject = importedObject;
+        this[importedObject] = properties = {
+                itDirection : {
+                    backEnd : 'backend',
+                    frontend : 'frontend',
+                    other : 'other',
+                }
+            }
         //  this[importedObject].img : ... ,
-        this.itDirection = {
-                backEnd : 'backend',
-                frontend : 'frontend',
-                other : 'other',
-            };
+
         // this.status = {
         //         done : // тут либо указать руками цвета, либо написать функцию присваивающую цвета
         //         inProgress :
@@ -18,3 +19,6 @@ class categoryConstructorWithProperties {
         
     }
 }
+
+export default categoryConstructorWithProperties;
+
