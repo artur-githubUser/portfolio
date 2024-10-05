@@ -19,6 +19,6 @@ tagLi.tag.append(tagImg.tag);
 let gulpIcon = tagLi.tag;
 
 
-export {gulpIcon};
+export default gulpIcon;
 
 
