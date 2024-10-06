@@ -24,17 +24,30 @@ let gulpIcon = tagLi.tag;
 //  =test=======================================
 
 class CategoryConstructorWithProperties {
-
     
     constructor (itDirectionValue) {
         this.itDirection = itDirectionValue;
     }
 
-    // set itDirection (value) {
+    set itDirection(value) {
         
-    // }
+        if (value != 'frontend') {
+            console.log('not true');
+        } else {
+            this._itDirection = value;
+        }
+    }
+}
 
-    // set itDirection(value) {
+let gulpIconProperties = new CategoryConstructorWithProperties ('frontend');
+// gulpIcon.gulpIconProperties = gulpIconProperties;
+console.log(gulpIconProperties);
+
+
+
+
+    
+    // setItDirectionValue(value) {
     //     try {
     //         if (this.itDirection == ('backend' || 'frontend' || 'other')) {
     //             return this.itDirectionValue == value;
@@ -51,12 +64,12 @@ class CategoryConstructorWithProperties {
     //         console.log(error.message);
     //     }
     // }
-        
-}
 
-let gulpIconProperties = new CategoryConstructorWithProperties ('fntend');
-gulpIcon.gulpIconProperties = gulpIconProperties;
 
+
+// let gulpIconProperties = new CategoryConstructorWithProperties ('frontend');
+// // gulpIcon.gulpIconProperties = gulpIconProperties;
+// console.log(gulpIconProperties.itDirection);
 
 //  =test=======================================
 

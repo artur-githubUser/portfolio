@@ -38,8 +38,5 @@ insertElementToObject(
 
 export {insertElementToObject}
 
-import gulpIcon from "./competence-icons/icons/gulp/gulp-icon-assembler.js";
 
-if (gulpIcon.gulpIconProperties.itDirection == 'frontend') {
-    gulpIcon.hidden = true;
-}
+
