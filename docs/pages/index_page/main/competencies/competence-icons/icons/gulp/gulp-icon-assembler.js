@@ -40,13 +40,12 @@ class CategoryConstructorWithProperties {
 }
 
 let gulpIconProperties = new CategoryConstructorWithProperties ('frontend');
-// gulpIcon.gulpIconProperties = gulpIconProperties;
-console.log(gulpIconProperties);
 
-
-
-
+gulpIcon.gulpIconProperties = gulpIconProperties;
+console.log(Object.values(gulpIcon));
     
+
+
     // setItDirectionValue(value) {
     //     try {
     //         if (this.itDirection == ('backend' || 'frontend' || 'other')) {

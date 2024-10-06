@@ -34,19 +34,18 @@ class CategoryConstructorWithProperties {
         if (value != 'frontend') {
             console.log('not true');
         } else {
-            this._itDirection = value;
+            this._itDirection = value
         }
     }
 }
 
 let gulpIconProperties = new CategoryConstructorWithProperties ('frontend');
-// gulpIcon.gulpIconProperties = gulpIconProperties;
-console.log(gulpIconProperties);
 
-
-
-
+gulpIcon.gulpIconProperties = gulpIconProperties;
+console.log(Object.values(gulpIcon));
     
+
+
     // setItDirectionValue(value) {
     //     try {
     //         if (this.itDirection == ('backend' || 'frontend' || 'other')) {
