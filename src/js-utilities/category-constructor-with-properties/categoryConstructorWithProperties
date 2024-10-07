@@ -1,3 +1,8 @@
+
+
+// эт ухуйню убрать, нормально организовать
+// скорее всего этот модуль в утилитис не нужен
+
 class CategoryConstructorWithProperties {
 
     constructor (itDirection) {

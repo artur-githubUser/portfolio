@@ -11,7 +11,8 @@
 
 
 
-console.log('hi from insertElementTo');
+
+console.log('закинуть это в утилиты наверное');
 
 function insertElementToObject (stringPathToModule, stringObjectId) { //stringPathToModule, placedElement,  stringObjectId
     

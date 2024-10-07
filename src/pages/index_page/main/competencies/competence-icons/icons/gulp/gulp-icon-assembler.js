@@ -23,54 +23,36 @@ let gulpIcon = tagLi.tag;
 
 //  =test=======================================
 
-class CategoryConstructorWithProperties {
+class CategoryConstructorWithOptions {
     
+    itDirectionOptions = [
+        'frontend',
+        'backend',
+        'other',
+    ]
+
+
     constructor (itDirectionValue) {
         this.itDirection = itDirectionValue;
     }
 
     set itDirection(value) {
         
-        if (value != 'frontend') {
-            console.log('not true');
+        if (this.itDirectionOptions.includes(value)) {
+            this._itDirection = value;
         } else {
-            this._itDirection = value
+            console.log(`please enter one of this value: ${this.itDirectionOptions.join(', ')}`);
         }
+
+        
     }
 }
 
-let gulpIconProperties = new CategoryConstructorWithProperties ('frontend');
+let gulpIconOptions = new CategoryConstructorWithOptions ('frontend');
 
-gulpIcon.gulpIconProperties = gulpIconProperties;
+gulpIcon.gulpIconOptions = gulpIconOptions;
 console.log(Object.values(gulpIcon));
-    
 
-
-    // setItDirectionValue(value) {
-    //     try {
-    //         if (this.itDirection == ('backend' || 'frontend' || 'other')) {
-    //             return this.itDirectionValue == value;
-    //         } else {
-    //             class PropertyInstallationError extends Error {
-    //                 constructor(message) {
-    //                     super(message);
-    //                     this.name = "PropertyInstallationError";
-    //                 }
-    //             }
-    //             throw new PropertyInstallationError("for the itDirection parameter, only one of these string arguments is used: backend, frontend, other");
-    //         }
-    //     } catch(error) {
-    //         console.log(error.message);
-    //     }
-    // }
-
-
-
-// let gulpIconProperties = new CategoryConstructorWithProperties ('frontend');
-// // gulpIcon.gulpIconProperties = gulpIconProperties;
-// console.log(gulpIconProperties.itDirection);
-
-//  =test=======================================
 
 
 export default gulpIcon;
