@@ -41,6 +41,7 @@ class CategoryConstructorWithOptions {
         if (this.itDirectionOptions.includes(value)) {
             this._itDirection = value;
         } else {
+            //  мб просто создать ошибку и вывести её в консось?
             console.log(`please enter one of this value: ${this.itDirectionOptions.join(', ')}`);
         }
 
