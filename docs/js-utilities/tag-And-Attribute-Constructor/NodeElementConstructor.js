@@ -26,10 +26,10 @@ class imgTagAttributes extends DefaultTag {
 
 
 
-const tagAndAttributeConstructor = {
+const NodeElementConstructor = {
     defaultTag : DefaultTag,
     imgTag : imgTagAttributes,
 }
 
 
-export {tagAndAttributeConstructor};
+export {NodeElementConstructor};

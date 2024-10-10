@@ -1,14 +1,14 @@
-import { tagAndAttributeConstructor } from "../../../../../../../js-utilities/tag-And-Attribute-Constructor/tagAndAttributeConstructor.js";
+import { NodeElementConstructor } from "../../../../../../../js-utilities/tag-And-Attribute-Constructor/NodeElementConstructor.js";
 // import {categoryConstructorWithProperties} from "../../../../../../../js-utilities/category-constructor-with-properties/categoryConstructorWithProperties.js";
 
 
-let tagLi = new tagAndAttributeConstructor.defaultTag(
+let tagLi = new NodeElementConstructor.defaultTag(
     'li',
     'gulp-competence-icon',
     'competence-style'
 );
 
-let tagImg = new tagAndAttributeConstructor.imgTag(
+let tagImg = new NodeElementConstructor.imgTag(
     'img',
     'gulp-competence-icon-image',
     'competence-img-style',
