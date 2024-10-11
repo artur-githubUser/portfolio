@@ -16,9 +16,49 @@ let tagImg = new NodeElementConstructor.imgTag(
     'gulp'
 );
 
-tagLi.tag.append(tagImg.tag);
+// tagLi.tag.prepend(tagImg.tag);
+// let gulpIcon = tagLi.tag;
 
-let gulpIcon = tagLi.tag;
+
+//  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+let tagSpan = new NodeElementConstructor.defaultTag(
+    'span',
+    'just-span',
+    'span-styles',
+)
+
+// let elements = [tagSpan, tagImg];
+function matryoshkaElementAssemling(parentElement, ...elements) {
+
+
+
+    let result = elements.reduce(function (previousElement, item, index, array) {
+
+            previousElement.prepend(item.tag);
+            return previousElement;
+        }, parentElement)
+
+    return result;
+
+}
+
+let gulpIcon = matryoshkaElementAssemling(tagLi.tag, tagSpan);
+
+
+
+// function insertElementInsideElement (outerElement, innerElement) {
+//     if (('tag' in outerElement) & ('tag' in innerElement)) {
+//         outerElement.tag.prepend(innerElement.tag);
+//         return outerElement.tag;
+//     } else {
+//         console.log('something goes wrong');
+//     }
+// };
+
+// let gulpIcon = insertElementInsideElement(tagLi, tagImg)
+
+
 
 
 //  =test=======================================
