@@ -28,35 +28,14 @@ let tagSpan = new NodeElementConstructor.defaultTag(
     'span-styles',
 )
 
-// let elements = [tagSpan, tagImg];
-function matryoshkaElementAssemling(parentElement, ...elements) {
-
-
-
-    let result = elements.reduce(function (previousElement, item, index, array) {
-
-            previousElement.prepend(item.tag);
-            return previousElement;
-        }, parentElement)
-
-    return result;
-
+//  это сборщик
+function assemlbleElement (...elements) {
+    elements[0].tag
+    .appendChild(elements[1].tag)
+    .appendChild(elements[2].tag);
+    return elements[0].tag;
 }
-
-let gulpIcon = matryoshkaElementAssemling(tagLi.tag, tagSpan);
-
-
-
-// function insertElementInsideElement (outerElement, innerElement) {
-//     if (('tag' in outerElement) & ('tag' in innerElement)) {
-//         outerElement.tag.prepend(innerElement.tag);
-//         return outerElement.tag;
-//     } else {
-//         console.log('something goes wrong');
-//     }
-// };
-
-// let gulpIcon = insertElementInsideElement(tagLi, tagImg)
+let gulpIcon = assemlbleElement(tagLi, tagSpan, tagImg);
 
 
 
