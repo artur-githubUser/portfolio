@@ -25,15 +25,15 @@ function insertElementToObject (stringPathToModule, stringObjectId) { //stringPa
 
 
 insertElementToObject(
-    "./competence-icons/icons/javascript/js-icon-assembler.js",
+    "./competence-icons/icons/javascript-icon-content-block/js-icon-content-block-assembler.js",
     'competencies-list',
 );
 
 
 insertElementToObject(
-    "./competence-icons/icons/gulp/gulp-icon-assembler.js",
+    "./competence-icons/icons/gulp-icon-content-block/gulp-icon-content-block-assembler.js",
     'competencies-list',
-)
+);
 
 
 
