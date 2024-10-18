@@ -14,7 +14,7 @@
 
 console.log('закинуть это в утилиты наверное');
 
-function insertElementToObject (stringPathToModule, stringObjectId) { //stringPathToModule, placedElement,  stringObjectId
+function insertContentBlockTo (stringPathToModule, stringObjectId) { //stringPathToModule, placedElement,  stringObjectId
     
     import(stringPathToModule)
     .then( module => document.getElementById(stringObjectId).append(module.default) )
