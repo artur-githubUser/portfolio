@@ -1,16 +1,16 @@
-import { NodeElementConstructor } from "../../../../../../../js-utilities/tag-And-Attribute-Constructor/NodeElementConstructor.js";
+import { ElementConstructor } from "../../../../../../../js-utilities/element-constructor/element-constructor.js";
 import iconContentBlockAssembler from "../iconContentBlockAssembler.js";
 
 // import {categoryConstructorWithProperties} from "../../../../../../../js-utilities/category-constructor-with-properties/categoryConstructorWithProperties.js";
 
 
-let tagLi = new NodeElementConstructor.defaultTag(
+let tagLi = new ElementConstructor.defaultTag(
     'li',
     'gulp-competence-icon',
     'competence-style'
 );
 
-let tagImg = new NodeElementConstructor.imgTag(
+let tagImg = new ElementConstructor.imgTag(
     'img',
     'gulp-competence-icon-image',
     'competence-img-style',

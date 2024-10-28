@@ -1,9 +1,9 @@
-import {tagAndAttributeConstructor} from '../../../../../../../js-utilities/tag-And-Attribute-Constructor/tagAndAttributeConstructor.js';
+import { ElementConstructor } from '../../../../../../../js-utilities/element-constructor/element-constructor.js';
 import iconContentBlockAssembler from '../iconContentBlockAssembler.js';
 
-let tagLi =  new tagAndAttributeConstructor.defaultTag ('li', 'js-competence-icon','competence-style');
+let tagLi =  new ElementConstructor.defaultTag ('li', 'js-competence-icon','competence-style');
 
-let tagImg = new tagAndAttributeConstructor.imgTag (
+let tagImg = new ElementConstructor.imgTag (
     'img',
     'javascript-competence-icon-image',
     'competence-img-style',
