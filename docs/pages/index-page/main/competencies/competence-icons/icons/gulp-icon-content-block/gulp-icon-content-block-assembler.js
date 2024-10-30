@@ -1,4 +1,4 @@
-import { ElementConstructor } from "../../../../../../../js-utilities/element-constructor/element-constructor.js";
+import { ElementConstructor } from "../../../../../../../js-modules/utilities/constructors/element-constructor/element-constructor.js";
 import iconContentBlockAssembler from "../iconContentBlockAssembler.js";
 
 // import {categoryConstructorWithProperties} from "../../../../../../../js-utilities/category-constructor-with-properties/categoryConstructorWithProperties.js";
@@ -14,7 +14,7 @@ let tagImg = new ElementConstructor.imgTag(
     'img',
     'gulp-competence-icon-image',
     'competence-img-style',
-    'pages/index_page/main/competencies/competence-icons/icons/gulp-icon-content-block/gulp.svg',
+    'pages/index-page/main/competencies/competence-icons/icons/gulp-icon-content-block/gulp.svg',
     'gulp'
 );
 
