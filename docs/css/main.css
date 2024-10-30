@@ -133,6 +133,18 @@ body {
   gap: 0.625rem;
 }
 
+.test-ul-styles {
+  width: 100%;
+  height: 100px;
+  background-color: gray;
+}
+
+.test-li-styles {
+  width: 50%;
+  height: 50%;
+  background-color: red;
+}
+
 .ul-projects .li-project {
   position: relative;
   text-align: right;
