@@ -2,6 +2,9 @@
 //  в файле иконки уже вставляем в массив как нам удобно
 //  импортируем коллекцию в инсертер, который вставляет коллецию в UL
 
+//  в целом нужна функция чтобы не писать руками сначала импорт иконки, а потом push в массив competenceIconsCollection
+
+
 let competenceIconsCollection = [];
 export default competenceIconsCollection;
 
