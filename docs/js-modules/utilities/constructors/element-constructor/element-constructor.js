@@ -1,6 +1,6 @@
 
 // (i) под каждый контент-блок пишется свой ассемблер
-//  добавить класс DefaultTagWithTextNode, расширяющий DefaultTag
+//  добавить класс DefaultTagWithTextNode (для вставки текста), расширяющий DefaultTag
 // в библиотеку
 
 

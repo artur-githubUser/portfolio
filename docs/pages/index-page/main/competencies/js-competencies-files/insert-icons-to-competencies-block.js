@@ -22,30 +22,18 @@
 
 
 
-console.log('hi from js comp files');
+console.log('hi from insert comp block');
 
 
-import {ElementConstructor} from "../../../../../js-modules/utilities/constructors/element-constructor/element-constructor.js";
-import iconContentBlockAssembler from "../competence-icons/icons/iconContentBlockAssembler.js";
+import { competenceIconsCollection } from "./competence-icons-collection.js";
+import gulpIconContentBlock from "../competence-icons/icons/gulp-icon-content-block/gulp-icon-content-block-assembler.js";
+
+competenceIconsCollection.push(gulpIconContentBlock);
+
+document.querySelector('.competencies-list-styles').append(...competenceIconsCollection);
 
 
-let tagTestUl = new ElementConstructor.defaultTag(
-    'ul',
-    'test-ul',
-    'test-ul-styles'
-);
 
-let tagTestLi = new ElementConstructor.defaultTag(
-    'li',
-    'test-li',
-    'test-li-styles'
-)
-
-// собранный Ul
-// let testUlContentBlock = iconContentBlockAssembler(tagTestUl, tagTestLi);
-
-document.querySelector('.competencies-container-styles').append(tagTestUl.tag);
-document.querySelector('.test-ul-styles').append(tagTestLi.tag);
 
 
 
