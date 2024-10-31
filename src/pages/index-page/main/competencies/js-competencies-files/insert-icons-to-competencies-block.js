@@ -1,7 +1,4 @@
 
-
-
-
 // function insertContentBlockAppendParentBlock (stringPathToContentBlockModule, stringParentBlockId) {
 //     import(stringPathToContentBlockModule)
 //     .then( module => document.getElementById(stringParentBlockId).append(module.default) )
@@ -20,19 +17,30 @@
 //     'competencies-list',
 // );
 
+//=================================================================================
+
+
 
 
 console.log('hi from insert comp block');
 
 
-import { competenceIconsCollection } from "./competence-icons-collection.js";
-import gulpIconContentBlock from "../competence-icons/icons/gulp-icon-content-block/gulp-icon-content-block-assembler.js";
-
-competenceIconsCollection.push(gulpIconContentBlock);
-
+import competenceIconsCollection from "./competence-icons-collection.js";
 document.querySelector('.competencies-list-styles').append(...competenceIconsCollection);
 
 
+
+
+
+
+// test - работает с querySelector
+
+// function arrayPushItemDynamicImport () {
+//     import("../competence-icons/icons/gulp-icon-content-block/gulp-icon-content-block-assembler.js")
+//     .then( module => document.querySelector('.competencies-list-styles').append(module.default));
+// }
+
+// arrayPushItemDynamicImport();
 
 
 

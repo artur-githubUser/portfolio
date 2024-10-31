@@ -1,5 +1,6 @@
 import { ElementConstructor } from "../../../../../../../js-modules/utilities/constructors/element-constructor/element-constructor.js";
 import iconContentBlockAssembler from "../iconContentBlockAssembler.js";
+
 // import {competenceIconsCollection} from "../../../js-competencies-files/competence-icons-collection.js";
 
 // import {categoryConstructorWithProperties} from "../../../../../../../js-utilities/category-constructor-with-properties/categoryConstructorWithProperties.js";
@@ -21,6 +22,7 @@ let tagImg = new ElementConstructor.imgTag(
 
 
 let gulpIconContentBlock = iconContentBlockAssembler(tagLi, tagImg);
+
 
 
 //  =test=======================================
