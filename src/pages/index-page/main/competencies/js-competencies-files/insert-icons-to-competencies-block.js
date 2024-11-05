@@ -32,17 +32,3 @@ document.querySelector('.competencies-list-styles').append(...competenceIconsCol
 
 
 
-
-// test - работает с querySelector
-
-// function arrayPushItemDynamicImport () {
-//     import("../competence-icons/icons/gulp-icon-content-block/gulp-icon-content-block-assembler.js")
-//     .then( module => document.querySelector('.competencies-list-styles').append(module.default));
-// }
-
-// arrayPushItemDynamicImport();
-
-
-
-
-

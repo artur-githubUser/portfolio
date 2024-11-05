@@ -1,39 +1,31 @@
-//  здесь сорздаём массив из icons и импортируем его в файл-ассемлер иконок
-//  в файле иконки уже вставляем в массив как нам удобно
-//  импортируем коллекцию в инсертер, который вставляет коллецию в UL
+// работает с querySelector:
+// function arrayPushItemDynamicImport () {
+//     import("../competence-icons/icons/gulp-icon-content-block/gulp-icon-content-block-assembler.js")
+//     .then( module => document.querySelector('.competencies-list-styles').append(module.default));
+// }
+// arrayPushItemDynamicImport();
+//  ==============================================================================
+
+
+// мб организовать автоматический импорт и вставку в будущем через бэк?
+//  ===============================================================================
+
 
 let competenceIconsCollection = [];
 export default competenceIconsCollection;
 
+function push (importedContentBlock) {
+    competenceIconsCollection.push(importedContentBlock);
+}
 
-// import gulpIconContentBlock from "../competence-icons/icons/gulp-icon-content-block/gulp-icon-content-block-assembler.js";
-// competenceIconsCollection.push(gulpIconContentBlock);
+// =============================================================================
 
-
-//  function importAndPush (icon) {
-//      competenceIconsCollection.push(icon);
-//  }
-//  importAndPush(import("../competence-icons/icons/gulp-icon-content-block/gulp-icon-content-block-assembler.js"));
-
-
-// примерно в таком виде работает
+import gulpIconContentBlock from "../competence-icons/icons/gulp-icon-content-block/gulp-icon-content-block-assembler.js";
+push(gulpIconContentBlock);
 
 
+import javascriptIconContentBlock from "../competence-icons/icons/javascript-icon-content-block/js-icon-content-block-assembler.js";
+push(javascriptIconContentBlock);
 
 
-// =======================================================================================
-
-// так тоже работает (кант стр 604)
-// попробовать засунуть в функцию
-
-let {default: gulp} = await import("../competence-icons/icons/gulp-icon-content-block/gulp-icon-content-block-assembler.js");
-competenceIconsCollection.push(gulp);
-
-
-
-
-
-
-
-// https://stackoverflow.com/questions/60712238/how-to-change-variable-value-from-another-module-in-javascript
-// https://stackoverflow.com/staging-ground/79144690
+console.log(competenceIconsCollection);
