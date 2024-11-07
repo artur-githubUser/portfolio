@@ -14,9 +14,14 @@
 let competenceIconsCollection = [];
 export default competenceIconsCollection;
 
-function push (importedContentBlock) {
-    competenceIconsCollection.push(importedContentBlock);
+
+function push (
+    importedContentBlock,
+    contentArray = competenceIconsCollection
+    ) {
+    contentArray.push(importedContentBlock);
 }
+
 
 // =============================================================================
 
@@ -25,6 +30,9 @@ push(gulpIconContentBlock);
 
 import javascriptIconContentBlock from "../competence-icons/icons/javascript-icon-content-block/js-icon-content-block-assembler.js";
 push(javascriptIconContentBlock);
+
+import gitIconContentBlock from "../competence-icons/icons/git-icon-content-block/git-icon-content-block-assembler.js";
+push(gitIconContentBlock);
 
 
 
