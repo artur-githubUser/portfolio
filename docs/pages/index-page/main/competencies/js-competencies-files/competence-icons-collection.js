@@ -34,6 +34,10 @@ push(javascriptIconContentBlock);
 import gitIconContentBlock from "../competence-icons/icons/git-icon-content-block/git-icon-content-block-assembler.js";
 push(gitIconContentBlock);
 
+import sassIconContentBlock from "../competence-icons/icons/sass-icon-content-block/sass-icon-content-block-assembler.js";
+push(sassIconContentBlock);
 
+import htmlIconContentBlock from "../competence-icons/icons/html-icon-content-block/html-icon-content-block-assembler.js";
+push(htmlIconContentBlock);
 
 
