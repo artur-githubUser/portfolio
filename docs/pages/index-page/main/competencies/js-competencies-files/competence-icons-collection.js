@@ -40,4 +40,5 @@ push(sassIconContentBlock);
 import htmlIconContentBlock from "../competence-icons/icons/html-icon-content-block/html-icon-content-block-assembler.js";
 push(htmlIconContentBlock);
 
-
+import cssIconContentBlock from "../competence-icons/icons/css-icon-content-block/css-icon-content-block-assembler.js";
+push(cssIconContentBlock);
