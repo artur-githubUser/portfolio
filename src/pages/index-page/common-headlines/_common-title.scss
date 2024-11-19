@@ -6,7 +6,7 @@
     font-family: 'Saira';
     font-weight: 500;
     font-size: rem(16);
-    color: $label_dark_articles_header;
+    color: $labels-and-common-headlines;
     margin-bottom: rem(10);
         &::before {
         content: '';
@@ -15,6 +15,6 @@
         height: rem(1);
         left: rem(0);
         border-radius: rem(0.5);
-        background-color: $label_dark_articles_header;
+        background-color: $labels-and-common-headlines;
         }
 }
