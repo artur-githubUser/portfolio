@@ -45,3 +45,6 @@ push(cssIconContentBlock);
 
 import mobileFirstIconContentBlock from "../competence-icons/icons/mobile-first-icon-content-block/mobile-first-icon-content-block-assembler.js";
 push(mobileFirstIconContentBlock);
+
+import figmaIconContentBlock from "../competence-icons/icons/figma-icon-content-block/figma-icon-content-block-assembler.js";
+push(figmaIconContentBlock);
