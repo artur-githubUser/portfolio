@@ -48,3 +48,6 @@ push(mobileFirstIconContentBlock);
 
 import figmaIconContentBlock from "../competence-icons/icons/figma-icon-content-block/figma-icon-content-block-assembler.js";
 push(figmaIconContentBlock);
+
+import phpIconContentBlock from "../competence-icons/icons/php-icon-content-block/php-icon-content-block-assembler.js";
+push(phpIconContentBlock);
