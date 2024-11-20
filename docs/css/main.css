@@ -112,9 +112,8 @@ body {
 }
 
 .competence-style {
-  width: 3.75rem;
-  height: 3.75rem;
-  border-radius: 0.9375rem;
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 .competence-img-style {
@@ -130,7 +129,7 @@ body {
   flex-wrap: wrap;
   max-width: 65%;
   margin: 0 auto;
-  gap: 0.625rem;
+  gap: 1.875rem;
 }
 
 .projects-container-styles {
