@@ -42,3 +42,6 @@ push(htmlIconContentBlock);
 
 import cssIconContentBlock from "../competence-icons/icons/css-icon-content-block/css-icon-content-block-assembler.js";
 push(cssIconContentBlock);
+
+import mobileFirstIconContentBlock from "../competence-icons/icons/mobile-first-icon-content-block/mobile-first-icon-content-block-assembler.js";
+push(mobileFirstIconContentBlock);
